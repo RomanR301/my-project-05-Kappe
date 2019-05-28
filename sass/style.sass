@@ -1,10 +1,11 @@
 $grey-text: #6b7072
+
 *, *:before, *:after 
   box-sizing: border-box
 
 header
   position: fixed
-  top: 5
+  top: 0
   left: 0
   z-index: 50
   height: 100vh
@@ -13,7 +14,7 @@ header
   flex-direction: column
   background-color: #242b2e
   color: #6b7072
-  box-shadow: 11px 0px 9px #968c8c
+  box-shadow: 8px 0 14px 0 rgba(70, 70, 70, 0.55)
 .logo
   width: 100%
   height: 11.57vh
@@ -91,6 +92,66 @@ header
   width: 100%
   font-size: 0.62vmax
   color: $grey-text
-  
-
-    
+main
+  width: 100%
+  min-height: 100vh
+  padding-left: 15.62vw
+.portfolio
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  &-box
+    height: 16.19vw
+    max-width: 21.09vw
+    position: relative
+    overflow: hidden
+    & img
+      width: 102%
+      height: auto
+      position: absolute
+      z-index: 1
+    & a
+      position: absolute
+      z-index: 2
+      left: -21vw
+      display: flex
+      width: 100%
+      height: inherit
+      background-color: rgba(45, 184, 185, 0.9)
+      color: #ffffff
+      flex-flow: column nowrap
+      justify-content: center
+      align-items: center
+      text-decoration: none
+      transition: 0.6s
+    &:hover a
+        transition: 0.6s
+        left: 0
+    &__arrow
+      width: 3vw
+      height: 3vw
+      fill: #fff
+    h3
+      font-size: 1.8vw
+      font-weight: 400
+      margin-bottom: 0.78
+    h4
+      font-size: 1vw
+      font-weight: 400
+      &:after
+        content: ''
+        display: block
+        background-color: #ffffff
+        height: 1px
+        margin: 1vw auto
+        width: 100%
+.info
+  position: fixed
+  top: 0
+  right: 0
+  z-index: 5
+  width: 4.68vw
+  height: 4.68vw
+  background-color: rgba(45, 184, 185, 0.9)
+  fill: #fff
+  padding: 1vw
+  cursor: pointer

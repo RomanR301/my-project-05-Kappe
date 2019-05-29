@@ -52,6 +52,10 @@ header {
   background: linear-gradient(to bottom, #18a3a1 0%, #31bdbb 100%);
 }
 
+.main-nav .main-nav__active {
+  background: linear-gradient(to bottom, #18a3a1 0%, #31bdbb 100%);
+}
+
 .filter-title {
   color: #1ab5b3;
   fill: #1ab5b3;
@@ -84,7 +88,7 @@ header {
   color: #fff;
 }
 
-.filter-nav a.filter-nav__active {
+.filter-nav .filter-nav__active {
   color: #fff;
 }
 
@@ -202,5 +206,47 @@ main {
   fill: #fff;
   padding: 1vw;
   cursor: pointer;
+}
+
+.info-box {
+  position: fixed;
+  right: 0;
+  top: 4.68vw;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1vw 3.85vw 1vw 1vw;
+  transform: translateX(100%);
+  transition: all 0.35s;
+}
+
+.info-box-open {
+  transform: translateX(0%);
+  transition: all 0.35s;
+}
+
+.info-box ul {
+  padding: 0;
+  margin: 0;
+}
+
+.info-box li {
+  list-style: none;
+  color: #fff;
+  font-size: 0.83vmax;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  line-height: 0.78vmax;
+  margin-bottom: 1vw;
+}
+
+.info-box li:last-of-type {
+  margin-bottom: 0;
+}
+
+.info-box svg {
+  height: 0.88vw;
+  fill: #ffffff;
+  margin-right: 0.52vw;
 }
 /*# sourceMappingURL=style.css.map */

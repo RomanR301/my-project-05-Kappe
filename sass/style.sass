@@ -44,6 +44,8 @@ header
     &:hover
       transition: all 0.2s
       background: linear-gradient(to bottom,  #18a3a1 0%,#31bdbb 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  & .main-nav__active
+     background: linear-gradient(to bottom,  #18a3a1 0%,#31bdbb 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 .filter
   &-title
     color: #1ab5b3 
@@ -69,7 +71,7 @@ header
     color: $grey-text
     &:hover
       color: #fff
-  &-nav a.filter-nav__active
+  &-nav .filter-nav__active
     color: #fff
 .socials
   display: flex
@@ -155,3 +157,33 @@ main
   fill: #fff
   padding: 1vw
   cursor: pointer
+.info-box 
+  position: fixed
+  right: 0
+  top: 4.68vw
+  z-index: 5
+  background-color: rgba(0,0,0,0.7)
+  padding: 1vw 3.85vw 1vw 1vw
+  transform: translateX(100%)
+  transition: all 0.35s
+  &-open
+    transform: translateX(0%)
+    transition: all 0.35s
+  & ul
+    padding: 0
+    margin: 0
+  & li
+    list-style: none
+    color: #fff
+    font-size: 0.83vmax
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    line-height: 0.78vmax
+    margin-bottom: 1vw
+    &:last-of-type
+      margin-bottom: 0
+  & svg
+    height: 0.88vw
+    fill: #ffffff
+    margin-right: 0.52vw

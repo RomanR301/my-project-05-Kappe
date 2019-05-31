@@ -6,7 +6,7 @@ $light-grey-text: #a3a3a3
 
 body
   background-color: #b4b7b8
-
+// HOME SECTION
 header
   position: fixed
   top: 0
@@ -312,7 +312,7 @@ main
       &:last-of-type
         margin-bottom: 0
 
-// About section
+// ABOUT SECTION
 .about-page
   display: flex
   justify-content: space-between
@@ -442,5 +442,166 @@ main
     &:hover
       transition: all 0.35s
       color: #1ab5b3
+// BLOG SECTION
+.blog-post-height1  /* 230px */
+  height: 12vw
+.blog-post-height2  /* 262px */
+  height: 13.6vw
+.blog-post-height3  /* 184px */
+  height: 9.58vw
+.blog-post-height4  /* 141px */
+  height: 7.34vw
+.blog-post-height5  /* 316px */
+  height: 19vw
+.blog-post-height6  /* 168px */
+  height: 8.75vw
+.blog-post-height7  /* 265px */
+  height: 13.8vw
+
+.wrapper
+  margin: 1.56vw
+  padding: 0
+.blog
+  display: flex
+  justify-content: space-between
+  &-list
+    &__post
+      width: 15.31vw
+      height: auto
+      margin-bottom: 1.3vw
+      overflow: hidden
+      color: #9c9c9c
+      background-color: #fff
+      font-size: 0.67vw
+      line-height: 1.14vw
+      &-img
+        width: 100%
+        overflow: hidden
+        & img
+          height: 100%
+      &-about
+        padding: 1vw
+        border-bottom: 1px solid #e3e3e3
+        & h3
+          color: #242424
+          font-size: 0.93vw
+          margin-bottom: 0.78vw
+          font-weight: 400
+      &-info
+        display: flex
+        align-items: center
+        padding: 1vw
+        & p
+          margin: 0
+        & svg
+          height: 0.83vw
+          fill: #9c9c9c
+          margin-right: 0.5vw
+        &_comment,
+        &_date
+          display: flex
+          align-items: center
+        &_comment
+          margin-right: 1vw
+    &__single
+      & a
+        position: relative
+        width: 100%
+        height: inherit
+        display: flex
+        justify-content: center
+        align-items: center
+      & svg
+        position: absolute
+        fill: #ffffff
+        width: 3vw
+        height: 3vw
+        top: calc(50% - 1.5vw)
+        left: calc(50% - 1.5vw)
+        z-index: 1
+        opacity: 0
+        transition: all 0.3s
+      & a:hover svg
+        transition: all 0.3s
+        opacity: 1
+      & img
+        width: 100%
+        position: relative
+        z-index: 0
+        100%
+    &__another
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      color: #ffffff
+      background-color: #1ab5b3
+      padding: 2vw 1.5vw
+      font-size: 0.72vw
+      & p
+        text-align: center
+        font-size: 0.9vw
+        margin-bottom: 0.72 
+      & a
+        color: #ffffff
+        font-style: italic
+        text-decoration: underline
+    &__aside
+      background-color: #242b2e
+      border-left: 0.78vw solid #1ab5b3
+      padding: 1vw 1.2vw
+      & h3
+        font-size: 1.09vw
+        color: #fff
+        font-weight: 400
+        margin-bottom: 0.78vw
+      & p
+        color: #9c9c9c
+        font-size: 0.72vw
+    &__quote 
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #242b2e
+      padding: 1.82vw 1.56vw
+      font-family: Constantia
+      font-style: italic
+      flex-direction: column
+      & h4
+        font-size: 1.09vw
+        margin-bottom: 1.25vw
+        text-align: center
+        line-height: 1.35vw
+        font-weight: 400
+        color: #fff
+      & p:first-of-type
+        font-size: 3.33vw
+        margin: 0
+        padding-top: 0.8vw
+      & p
+        color: #1ab5b3
+        font-size: 0.93vw
+.blog-button__container
+  display: flex
+  justify-content: center
+  & .blog-btn
+    color: #ffffff
+    border: none
+    text-transform: uppercase
+    background-color: #1ab5b3
+    font-size: 1vw
+    padding: 0.9vw 1.4vw
+    transition: all 0.3s
+    &:hover
+      background-color: #242b2e
+      
+      transition: all 0.3s
+
+.blog-post-height6,
+.blog-post-height4
+  & img
+    height: auto
+    width: 100%
+
 
 

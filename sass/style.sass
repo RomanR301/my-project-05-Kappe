@@ -593,8 +593,7 @@ main
     padding: 0.9vw 1.4vw
     transition: all 0.3s
     &:hover
-      background-color: #242b2e
-      
+      background-color: #242b2e 
       transition: all 0.3s
 
 .blog-post-height6,
@@ -603,5 +602,130 @@ main
     height: auto
     width: 100%
 
+// SERVICES\SINGLE WORK SECTION
+.page-left__img-singlepage
+  height: auto
+.page-left__comments
+  padding-bottom: 1.6vw
+  border-bottom: 1px solid #e5e5e5
+  & h4
+    font-size: 1.25vw
+    font-weight: 400
+    margin-bottom: 1.14vw
+  &-list
+    & ul
+      list-style: none
+      padding: 0
+      position: relative
+      & li
+        margin-bottom: 1.66vw
+    & ul ul
+      margin-left: 2vw
+      padding-left: 2vw
 
+      &:before
+        content: ''
+        display: block
+        background-image: url(../img/single/comments-line.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        width: 2.5vw
+        height: 2.5vw
+        position: absolute
+        left: -1.3vw
+        top: -0.7vw
+.comments-box
+  display: flex
+  &__img img
+    height: 100%
+  &__img
+    width: 4.16vw
+    height: 4.16vw
 
+    text-align: center
+    margin-right: 1.14vw
+  &__info 
+    h5
+      font-size: 0.72vw
+      color: #3c3c3c
+      border-bottom: 1px solid #e5e5e5
+      font-weight: 400
+      padding-bottom: 0.5vw
+    span
+      color: #d1d1d1
+    p
+      color: #a3a3a3
+      font-size: 0.93vw
+      margin-top: 0.53vw
+.page-left__form
+  margin-top: 1.25vw
+  & form
+    display: flex
+.left-form
+  display: flex
+  flex-direction: column
+  width: 50%
+  padding-right: 0.5vw
+  &__input, .right-form__input
+    display: flex
+    align-items: center
+    width: 100%
+    margin-bottom: 0.5vw  
+    &:last-of-type
+      margin-bottom: 0
+    & input
+      border: 1px solid #eaeaea
+      font-size: 0.72vmax
+      min-height: 3vw
+      width: 100%
+      padding: 0.93vw
+    &-img
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 3vw
+      width: 3vw
+      border: 1px solid #eaeaea
+      & img
+        width: 1.66vw
+        height: 1.66vw
+.right-form
+  width: 50%
+  & textarea
+    width: 100%
+    border: 1px solid #eaeaea
+    font-size: 0.72vmax
+    min-height: 3vw
+    width: 100%
+    padding: 0.93vw
+    resize: none
+    height: 6.5vw
+  & button
+    color: #ffffff
+    border: none
+    width: 100%
+    text-transform: uppercase
+    background-color: #1ab5b3
+    font-size: 1vw
+    padding: 0.9vw 1.4vw
+    transition: all 0.3s
+    &:hover
+      background-color: #242b2e
+      transition: all 0.3s
+.arcives
+  & ul
+    padding: 0
+    list-style: none
+    & li
+      font-size: 0.8vw
+      margin-bottom: 0.5vw
+      color: #848484
+      cursor: pointer
+      transition: all 0.35s
+      &:hover
+        transition: all 0.35s
+        color: #1ab5b3
+.line-separation
+  border-right: 1px solid #e5e5e5
+  padding-right: 1.56vw

@@ -1047,4 +1047,321 @@ main {
   height: 100vh;
   width: 100%;
 }
+
+.main-nav__btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .logo {
+    height: 15vh;
+  }
+  .logo img {
+    width: 40vw;
+  }
+  .main-nav, .filter, .socials, .copyright {
+    display: none;
+  }
+  .main-nav a, .filter a, .socials a, .copyright a {
+    justify-content: center;
+    font-size: 2vmax;
+    height: 6vmax;
+    padding-right: 0;
+  }
+  .open {
+    display: block;
+  }
+  .main-nav__btn {
+    display: block;
+    font-size: 3vmax;
+    color: #ffffff;
+    width: 100%;
+    padding: 3vw;
+    border: none;
+    outline: none;
+    background-color: #2f373b;
+    background: linear-gradient(to bottom, #333b3f 0%, #2e363a 100%);
+  }
+  main {
+    padding-left: 0;
+  }
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-box {
+    height: 37vw;
+    max-width: unset;
+  }
+  .portfolio-box a {
+    left: -100vw;
+  }
+  .work-page {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .work-page__left, .work-page__right {
+    width: 100%;
+  }
+  .page-left__img {
+    height: 60vw;
+  }
+  .page-left__about h2 {
+    font-size: 5.55vw;
+    line-height: 8.05vw;
+  }
+  .page-left__about p {
+    font-size: 4.23vw;
+    line-height: 6.36vw;
+  }
+  .title-info {
+    font-size: 5.65vw;
+    line-height: 10.05vw;
+  }
+  .page-left__related-list a {
+    width: 100%;
+  }
+  .project-info ul li {
+    font-size: 4vw;
+    line-height: 5.06vw;
+    padding: 1.82vw 0;
+  }
+  .project-info ul li img {
+    margin-right: 2.77vw;
+  }
+  .project-tags__list-tag:first-of-type {
+    margin-right: 2.5vw;
+    margin-bottom: 2.5vw;
+  }
+  .project-tags__list-tag {
+    font-size: 3.5vw;
+    padding: 2.8vw 3vw;
+    margin-right: 2.5vw;
+    margin-bottom: 2.5vw;
+  }
+  .project-gallery__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .project-gallery__list-item {
+    width: 22.06vw;
+    height: 20.06vw;
+  }
+  .project-features ul li {
+    font-size: 4.5vw;
+    margin-bottom: 1.2vw;
+  }
+  .project-features ul svg {
+    width: 3.62vw;
+    margin-right: 2.02vw;
+  }
+  .about-page {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .about-page__left, .about-page__right {
+    width: 100%;
+  }
+  .about-page__left-img {
+    height: 50vw;
+  }
+  .about-page__left-about h2 {
+    font-size: 5.55vw;
+    line-height: 8.05vw;
+  }
+  .about-page__left-about {
+    font-size: 4.23vw;
+    line-height: 6.36vw;
+  }
+  .about-page__left-staff__list .staff-item {
+    width: 29.2vw;
+    height: 27.37vw;
+  }
+  .about-page__left-staff__list .staff-item a {
+    left: -100vw;
+  }
+  .skills-progress {
+    height: 4.77vw;
+  }
+  .about-page__right-skills li {
+    font-size: 3.78vw;
+  }
+  .testimonial {
+    height: 17vw;
+  }
+  .testimonial img {
+    width: 17vw;
+    height: 17vw;
+  }
+  .testimonial h3 {
+    font-size: 3.9vw;
+    margin-left: 2.25vw;
+  }
+  .testimonial-text {
+    font-size: 4.23vw;
+    line-height: 6.36vw;
+  }
+  .about-page__right-services li {
+    font-size: 4vw;
+    margin-bottom: 1vw;
+  }
+  .blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1vw;
+  }
+  .blog-list__post {
+    width: 100%;
+    font-size: 3.07vw;
+    line-height: 5.14vw;
+    margin-bottom: 3vw;
+  }
+  .blog-list__another p {
+    font-size: 3.5vw;
+  }
+  .blog-list__another a {
+    font-size: 4vw;
+  }
+  .blog-post-height1 {
+    height: 75vw;
+  }
+  .blog-post-height4 {
+    height: 73vw;
+  }
+  .blog-post-height5 {
+    height: 75vw;
+  }
+  .blog-post-height6 {
+    height: 73vw;
+  }
+  .blog-post-height7 {
+    height: 75vw;
+  }
+  .blog-list__quote h4 {
+    line-height: 7.35vw;
+    font-size: 4.79vw;
+  }
+  .blog-list__quote p:first-of-type {
+    font-size: 11.33vw;
+    padding-top: 4.8vw;
+  }
+  .blog-list__quote p {
+    font-size: 3.93vw;
+  }
+  .blog-list__aside h3 {
+    font-size: 4.09vw;
+    margin-bottom: 2.78vw;
+    text-align: center;
+  }
+  .blog-list__aside p {
+    font-size: 3.72vw;
+    text-align: center;
+  }
+  .blog-button__container .blog-btn {
+    font-size: 5vw;
+    padding: 2.4vw 32.4vw;
+  }
+  .blog-list__post-about h3 {
+    margin-bottom: 1.78vw;
+    font-size: 4.93vw;
+  }
+  .blog-list__post-info {
+    padding: 2vw;
+  }
+  .page-left__img {
+    height: 55vw;
+  }
+  .page-left__comments h4 {
+    font-size: 5.25vw;
+  }
+  .comments-box__img {
+    width: 13.16vw;
+    height: 13.16vw;
+    margin-right: 4.14vw;
+  }
+  .comments-box__info h5 {
+    font-size: 3.52vw;
+    padding-bottom: 1.5vw;
+  }
+  .comments-box__info p {
+    font-size: 3.63vw;
+  }
+  .page-left__form form {
+    flex-direction: column;
+  }
+  .left-form {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 0.5vw;
+  }
+  .left-form__input input, .left-form .right-form__input input {
+    height: 8vw;
+    font-size: 1.5vmax;
+  }
+  .left-form__input-img, .left-form .right-form__input-img {
+    height: 8vw;
+    width: 8vw;
+  }
+  .left-form__input-img img, .left-form .right-form__input-img img {
+    width: 4.66vw;
+    height: 4.66vw;
+  }
+  .right-form {
+    width: 100%;
+  }
+  .right-form textarea {
+    height: 15.5vw;
+    font-size: 1.72vmax;
+  }
+  .right-form button {
+    font-size: 2vw;
+    padding: 2vw 1.4vw;
+  }
+  .arcives ul li {
+    font-size: 3.8vw;
+  }
+  .contact-container {
+    width: 100%;
+  }
+  .contact-container .contact-title p {
+    font-size: 3.5vw;
+  }
+  .google-map {
+    display: none;
+  }
+  .map .right-form textarea {
+    height: 32.5vw;
+  }
+  .map .left-form__input input, .left-form .right-form__input input {
+    height: 13vw;
+  }
+  .map .left-form__input-img, .left-form .right-form__input-img {
+    height: 13vw;
+    width: 13vw;
+  }
+  .map .left-form__input-img img, .left-form .right-form__input-img img {
+    width: 7.66vw;
+    height: 7.66vw;
+  }
+  .info {
+    width: 11.68vw;
+    height: 11.68vw;
+  }
+  .info-box {
+    top: 11.68vw;
+  }
+  .info-box li {
+    font-size: 1.83vmax;
+    margin-bottom: 1.2vw;
+    line-height: 2.78vmax;
+    padding: 1vw;
+  }
+  .info-box svg {
+    height: 3.88vw;
+    margin-right: 3.52vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */

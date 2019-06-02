@@ -129,7 +129,6 @@ header {
 
 main {
   width: 100%;
-  min-height: 100vh;
   padding-left: 15.62vw;
 }
 
@@ -1015,5 +1014,37 @@ main {
 .line-separation {
   border-right: 1px solid #e5e5e5;
   padding-right: 1.56vw;
+}
+
+.contact-container {
+  width: 40.72vw;
+  padding: 1.56vw;
+  position: relative;
+  z-index: 50;
+}
+
+.contact-container .contact-title {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.contact-container .contact-title p {
+  color: #a3a3a3;
+}
+
+.main {
+  position: relative;
+}
+
+.main .wrap {
+  margin: 0;
+}
+
+.google-map {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
